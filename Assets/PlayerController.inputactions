@@ -1,0 +1,90 @@
+{
+    "name": "PlayerController",
+    "maps": [
+        {
+            "name": "Move",
+            "id": "031b6ce4-45c7-47bc-a553-9799ebf7e3b7",
+            "actions": [
+                {
+                    "name": "MoveInput",
+                    "type": "PassThrough",
+                    "id": "29f93e99-da21-47fa-8eb1-dd8773e58fc2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "e9b30310-08a6-4c56-b1f3-b31cb2fe417d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveInput",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "8e482552-eb1f-43f5-bd00-72675b8c2225",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Movement",
+                    "action": "MoveInput",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "61b890fa-4ba2-4f66-a239-8fe9bbea8f12",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Movement",
+                    "action": "MoveInput",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "9b7d287f-a369-40b4-b3ee-883b24bafac4",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Movement",
+                    "action": "MoveInput",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "877707a4-d4da-4c52-96b5-de429881323c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Movement",
+                    "action": "MoveInput",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Movement",
+            "bindingGroup": "Movement",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
